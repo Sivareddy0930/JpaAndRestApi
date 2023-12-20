@@ -1,0 +1,9 @@
+package com.OneToOne.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.OneToOne.Entity.Story;
+
+public interface PersonRepository extends JpaRepository<Story, Long> {
+
+}

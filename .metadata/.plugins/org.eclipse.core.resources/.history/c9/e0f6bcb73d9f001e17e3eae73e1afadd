@@ -1,0 +1,16 @@
+package com.OneToOne.ServiceInterface;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.OneToOne.Entity.Story;
+import com.OneToOne.Repository.BookRepository;
+
+@Service
+public class BookInterface implements PersonServiceInterface {
+	
+
+
+}

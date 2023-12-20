@@ -1,0 +1,17 @@
+package com.OneToOne.ServiceInterface;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.OneToOne.Entity.Book;
+import com.OneToOne.Entity.Story;
+import com.OneToOne.Repository.BookRepository;
+
+@Service
+public interface BookInterface {
+
+	public abstract Book findByBookId(Long bookId);
+	
+}

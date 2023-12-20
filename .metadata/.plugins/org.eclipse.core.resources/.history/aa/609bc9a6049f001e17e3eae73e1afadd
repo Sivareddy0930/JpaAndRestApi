@@ -1,0 +1,5 @@
+package com.OneToOne.Repository;
+
+public interface AddressRepository {
+
+}

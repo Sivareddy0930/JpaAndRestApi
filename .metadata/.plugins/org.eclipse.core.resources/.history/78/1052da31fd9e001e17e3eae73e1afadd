@@ -1,0 +1,5 @@
+package com.OneToOne.Entity;
+
+public class Address {
+
+}

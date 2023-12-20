@@ -1,0 +1,11 @@
+package com.OneToOne.Service;
+
+import java.util.List;
+
+import com.OneToOne.Entity.Book;
+
+
+public interface AddressServiceInterface {
+	public String saveAllAddress(List<Book> address);
+	public List<Book> getAllAddress();
+}

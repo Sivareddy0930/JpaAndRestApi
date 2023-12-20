@@ -1,0 +1,10 @@
+package com.OneToOne.Service;
+
+import java.util.List;
+
+import com.OneToOne.Entity.Story;
+
+public interface PersonServiceInterface {
+	public String saveAllPersons(List<Story> persons);
+	public List<Story> getAllPersons();
+}

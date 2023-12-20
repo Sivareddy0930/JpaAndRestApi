@@ -1,0 +1,31 @@
+package com.OneToOne.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.OneToOne.Entity.Story;
+import com.OneToOne.Repository.PersonRepository;
+
+@Service
+public class PersonServiceImpl implements PersonServiceInterface {
+	
+	@Autowired
+	private PersonRepository pr;
+	
+	@Override
+	public String saveAllPersons(List<Story> persons) {
+		pr.saveAll(persons);
+		return "succesfully saved all data";
+	}
+
+	@Override
+	public List<Story> getAllPersons() {
+		List<Story> l=pr.findAll();
+		return l;
+	}
+	
+	
+
+}

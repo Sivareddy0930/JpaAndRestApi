@@ -1,0 +1,20 @@
+package com.OneToOne.ServiceImplementation;
+
+import com.OneToOne.Entity.Book;
+import com.OneToOne.ServiceInterface.BookInterface;
+
+public class BookImplementation implements BookInterface {
+
+	@Override
+	public Book saveBook(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Book findByBookId(Long bookId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

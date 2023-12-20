@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;RestApi_Datajpa_OneToOne_app1&apos; to &apos;RestApi_Datajpa_OneToOne_BookStore&apos;&#x0D;&#x0A;- Original element: &apos;RestApi_Datajpa_OneToOne_app1&apos;&#x0D;&#x0A;- Renamed element: &apos;RestApi_Datajpa_OneToOne_app1&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;RestApi_Datajpa_OneToOne_app1&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=RestApi_Datajpa_OneToOne_app1" name="RestApi_Datajpa_OneToOne_BookStore" references="true" stamp="1703073071369" version="1.0"/>
+</session>

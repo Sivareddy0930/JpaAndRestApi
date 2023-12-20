@@ -1,0 +1,11 @@
+1703072317400	Rename type 'Address'
+1703072344301	Rename type 'Person'
+1703079459712	Delete element
+1703079489301	Rename type 'PersonRepository'
+1703079561349	Delete element
+1703079569636	Delete element
+1703079575349	Delete element
+1703079605530	Rename package 'com.OneToOne.Service'
+1703079659057	Rename type 'PersonServiceImpl'
+1703083520462	Delete element
+1703083547312	Rename type 'PersonController'
