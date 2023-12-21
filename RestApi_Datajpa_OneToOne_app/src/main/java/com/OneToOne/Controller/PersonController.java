@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,15 +21,9 @@ public class PersonController {
 	@Autowired
 	private PersonServiceImpl psi;
 	
-	@PostMapping("/postAllPersons")
-	public ResponseEntity<String> saveAllPersonsData(@RequestBody List<Person> persons){
-		String status =psi.saveAllPersons(persons);
-		return new ResponseEntity(status,HttpStatus.CREATED);
-	}
-	
-	@GetMapping("/getAllpersons")
-	public ResponseEntity<List<Person>> getAllpersons() {
-		List<Person> status=psi.getAllPersons();
+	@GetMapping("/getAllpersons/{mobile}")
+	public ResponseEntity<List<Person>> getByMobile(@PathVariable String mobile) {
+		List<Person> status=psi.findByMobile(mobile);
 		return new ResponseEntity<>(status,HttpStatus.OK);
 		
 	}

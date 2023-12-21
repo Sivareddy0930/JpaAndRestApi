@@ -22,7 +22,15 @@ public class AddressServiceImpl implements AddressServiceInterface {
 	@Override
 	public List<Address> getAllAddress() {
 		List<Address> l=ar.findAll();
+//		System.out.println(l);
 		return l;
+	}
+
+	@Override
+	public Address getByid(Long id) {
+		Address add=ar.findById(id).get();
+		System.out.println(add);
+		return add;
 	}
 
 }

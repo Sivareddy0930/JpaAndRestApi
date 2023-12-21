@@ -25,7 +25,7 @@ public class Book {
 	private Long bookId;
 	private String bookName;
 	
-	@OneToOne(mappedBy = "book")
+	@OneToOne(mappedBy = "book",cascade = CascadeType.ALL)
 	@JsonManagedReference
 	private Story story;
 	

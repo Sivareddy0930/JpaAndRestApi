@@ -8,4 +8,5 @@ import com.OneToOne.Entity.Address;
 public interface AddressServiceInterface {
 	public String saveAllAddress(List<Address> address);
 	public List<Address> getAllAddress();
+	public Address getByid(Long id);
 }

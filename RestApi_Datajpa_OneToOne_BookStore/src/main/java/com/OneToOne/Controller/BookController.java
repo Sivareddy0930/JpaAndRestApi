@@ -30,7 +30,7 @@ public class BookController {
         return bookResponse;
     }
 	
-	@GetMapping("/getAllpersons")
+	@GetMapping("/getAllpersons/{bookId}")
 	 public Book getBookDetails(@PathVariable Long bookId) {
         Book bookResponse = bi.findByBookId(bookId);
 

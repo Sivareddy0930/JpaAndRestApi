@@ -1,5 +1,8 @@
 package com.OneToOne.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -11,10 +14,12 @@ import jakarta.persistence.SequenceGenerator;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+//@ToString(exclude ="address")
 public class Address {
 	@Id
 	@SequenceGenerator(
@@ -32,5 +37,8 @@ public class Address {
     private String zip;
     
     @OneToOne(mappedBy = "address", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
+    @ToString.Exclude
+//    @JsonIgnore
     private Person person;
 }

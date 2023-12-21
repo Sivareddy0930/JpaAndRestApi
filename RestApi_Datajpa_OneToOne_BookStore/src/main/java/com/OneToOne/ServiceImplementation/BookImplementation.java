@@ -19,8 +19,8 @@ public class BookImplementation implements BookInterface {
 	@Override
 	public Book saveBook(Book book) {
 		
-		Story story=book.getStory();
-		story.setBook(book);
+//		Story story=book.getStory();
+//		story.setBook(book);
 		book=br.save(book);
 		return book;
 	}

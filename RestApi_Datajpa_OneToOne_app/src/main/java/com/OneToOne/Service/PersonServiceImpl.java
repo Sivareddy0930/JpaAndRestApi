@@ -13,18 +13,14 @@ public class PersonServiceImpl implements PersonServiceInterface {
 	
 	@Autowired
 	private PersonRepository pr;
-	
-	@Override
-	public String saveAllPersons(List<Person> persons) {
-		pr.saveAll(persons);
-		return "succesfully saved all data";
-	}
 
 	@Override
-	public List<Person> getAllPersons() {
-		List<Person> l=pr.findAll();
-		return l;
+	public List<Person> findByMobile(String mobile) {
+		List<Person> st=pr.findByMobile(mobile);
+		return st;
 	}
+	
+	
 	
 	
 
