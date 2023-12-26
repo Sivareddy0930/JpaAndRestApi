@@ -1,5 +1,6 @@
 package com.mappings.Entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
@@ -25,6 +26,6 @@ public class Book {
 	private String b_name;
 	
 	@OneToOne(mappedBy = "book",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-	@JsonManagedReference
+	@JsonBackReference
 	private Student student;
 }

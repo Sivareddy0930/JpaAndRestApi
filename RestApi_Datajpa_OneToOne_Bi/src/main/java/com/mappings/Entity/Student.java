@@ -31,8 +31,7 @@ public class Student {
 	
 	@OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	@JoinColumn(name="book_code",referencedColumnName = "b_code")
-	@JsonBackReference
+	@JsonManagedReference
 	private Book book;
-	
 	
 }
